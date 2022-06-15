@@ -1,0 +1,8 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+    {% include "checkout/_progress_bar_component.html" %}
+    <script>
+        $("#progress-bar-1").addClass("active")
+    </script>
+    {% include "users/_shipping_address_component.html" %}
+{% endblock content %}

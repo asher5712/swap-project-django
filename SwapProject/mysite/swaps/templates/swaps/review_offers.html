@@ -1,0 +1,16 @@
+{% extends "homepage/base.html" %}
+{% load user_agents %}
+{% block content %}
+    {%  if products %}
+
+        <div>
+            <h3> expand an item to accept or reject it </h3>
+            {% include "swaps/_review_offers_feed.html" %}
+        </div>
+
+    {% else %}
+        <div class="form-group" style="text-align: center">
+            <h2>no offers yet - check back later!</h2>
+        </div>
+    {% endif %}
+{% endblock content %}
